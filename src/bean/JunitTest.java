@@ -16,8 +16,10 @@ public class JunitTest {
 		//System.setProperty("webdriver.gecko.driver", "/Users/krajput2/Documents/SOfts/geckodriver");
 		WebDriver driver = new HtmlUnitDriver(true);
 		((HtmlUnitDriver) driver).setJavascriptEnabled(true);
-		driver.get("http://10.0.0.10:9090/CustomerOnBoard/index1.jsp");
-		String expectedTitle="CustomerOnBoarding for DXC";
+		//driver.get("http://10.0.0.10:9090/CustomerOnBoard/index1.jsp");
+		driver.get("http://www.google.com");
+		//String expectedTitle="CustomerOnBoarding for DXC";
+		String expectedTitle="Google";
 		System.out.println("Expected Title: "+expectedTitle);
 		String actualTitle=driver.getTitle();
 		if(actualTitle.equals(expectedTitle)){
